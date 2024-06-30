@@ -1,0 +1,13 @@
+\
+	set terminal svg background "white"; \
+	set output "Out3.gnuplot.svg"; \
+	set grid;\
+	set key left;\
+	set xlabel "x";\
+	set ylabel "lngamma(x)";\
+	set title "ln Gamma function";\
+	plot [-1:8]\
+		"Out3.txt" with lines notitle \
+		,"ln.fac.data.txt" with points pointtype 6 notitle \
+		,"ln.fac.data.txt" using 1:2 with points pointtype 6 not; \
+

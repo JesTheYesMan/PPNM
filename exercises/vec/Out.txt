@@ -1,0 +1,24 @@
+definition of the vectors for testing:
+a = (1, 2, 3)
+b = (-1, 0, 1)
+c = (0.5, 3.14, 1)
+
+Test of simple operations:
+2*a = (2, 4, 6)
+a+c = (1.5, 5.14, 4)
+c-b = (1.5, 3.14, 0)
+b-c = (-1.5, -3.14, 0)
+-a-b = (0, -2, -4)
+
+Test of dot products(using x.dot(y) ):
+a . b = 2
+b . a = 2
+a . a = 14
+a . d = 0
+
+Test of dot products(using x.dot(y) ):
+a . b = 2
+b . a = 2
+a . a = 14
+a . d = 0
+

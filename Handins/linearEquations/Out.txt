@@ -1,0 +1,95 @@
+Part A:
+
+Random matrix of size 5x3
+
+     -3.34      -1.09       1.31 
+     -3.08     -0.808       -1.6 
+      2.58       -4.6      -1.99 
+     -4.12      -4.13      -0.35 
+      0.33      -2.48       -4.9 
+
+
+ Decomp test 
+
+    -0.501    -0.0455      0.256 
+    -0.462    -0.0127     -0.433 
+     0.388     -0.787      0.256 
+    -0.619     -0.478      0.212 
+    0.0495     -0.387     -0.798 
+
+
+ Checking that R is upper tringular:
+      6.66       1.57     -0.715 
+         0       6.61       3.59 
+         0          0       4.36 
+
+
+ Checking Q^T*Q=1:
+         1  -1.32e-16   1.46e-16 
+ -1.32e-16          1   1.67e-16 
+  1.46e-16   1.67e-16          1 
+
+
+ Checking  QR=A
+
+     -3.34      -1.09       1.31 
+     -3.08     -0.808       -1.6 
+      2.58       -4.6      -1.99 
+     -4.12      -4.13      -0.35 
+      0.33      -2.48       -4.9 
+
+
+ Checking solve:
+Random matrix of size 3x3
+
+     -3.17      -4.37       2.86 
+      2.66       3.98      -4.06 
+         3       2.38       2.69 
+
+
+ Random vector of size 3
+     -2.13      -4.35      -4.84 
+
+
+ Decomposing A  
+Q=
+    -0.621     -0.342     -0.705 
+      0.52      0.494     -0.697 
+     0.587       -0.8     -0.128 
+R=
+      5.11       6.18      -2.31 
+         0       1.56      -5.13 
+         0          0      0.464 
+
+
+ Checking that QR=A:
+
+     -3.17      -4.37       2.86 
+      2.66       3.98      -4.06 
+         3       2.38       2.69 
+
+ Decomposing
+
+    -0.621     -0.342     -0.705 
+      0.52      0.494     -0.697 
+     0.587       -0.8     -0.128 
+
+
+ The solution to the system QRx=b:
+     -3.78       2.45       5.16 
+
+
+ Checking that Ax=b: 
+     -2.13      -4.35      -4.84 
+
+
+ Part B:
+I continue using the same matrix A as before so the first 2 tasks are done:
+calculate B
+    -0.621       0.52      0.587 
+    -0.342      0.494       -0.8 
+    -0.705     -0.697     -0.128 
+
+ 
+ Testing that B is the inverse:
+ A*B=A*A^-1=I : True

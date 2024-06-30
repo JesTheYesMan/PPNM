@@ -1,0 +1,16 @@
+sqrt(2=) 1.4142135623731
+sqrt2^2 =2 (should eaqual 2) 
+2^1/5 is 1.148698 which should equal  1.148..)
+(2^1/5)^5= 2 (should eaqual 2)
+e^pi = 23.140693 (should equal 23.14...)
+pi^e = 22.459158 (should eaqual 22.45...)
+For 0:		Gamma(1)= 1.00		ln(Gamma(1))=-0.00000001 -> exp(ln(Gamma(1))) = 0.99999999
+For 1:		Gamma(2)= 1.00		ln(Gamma(2))=-0.00000001 -> exp(ln(Gamma(2))) = 0.99999999
+For 2:		Gamma(3)= 2.00		ln(Gamma(3))=0.69314717 -> exp(ln(Gamma(3))) = 1.99999998
+For 3:		Gamma(4)= 6.00		ln(Gamma(4))=1.79175946 -> exp(ln(Gamma(4))) = 5.99999993
+For 4:		Gamma(5)= 24.00		ln(Gamma(5))=3.17805382 -> exp(ln(Gamma(5))) = 23.99999974
+For 5:		Gamma(6)= 120.00		ln(Gamma(6))=4.78749173 -> exp(ln(Gamma(6))) = 119.99999869
+For 6:		Gamma(7)= 720.00		ln(Gamma(7))=6.57925120 -> exp(ln(Gamma(7))) = 719.99999213
+For 7:		Gamma(8)= 5040.00		ln(Gamma(8))=8.52516135 -> exp(ln(Gamma(8))) = 5039.99994489
+For 8:		Gamma(9)= 40320.00		ln(Gamma(9))=10.60460289 -> exp(ln(Gamma(9))) = 40319.99955910
+For 9:		Gamma(10)= 362880.00		ln(Gamma(10))=12.80182747 -> exp(ln(Gamma(10))) = 362879.99765202

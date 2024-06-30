@@ -1,0 +1,28 @@
+sqrt(-1):
+sqrt(-1) = 6.12e-17+1i
+Should equal i
+
+sqrt(i):
+sqrt(i) = 0.707+0.707i  0.707+0.707i
+Should equal 0.70... + 0.70... i
+
+e^i:
+exp(i) = 0.54+0.841i  0.54+0.841i
+Should equal 0.54... + 0.84... i
+
+e^(i pi):
+exp(ipi) = -1+1.22e-16i
+Should equal -1
+
+i^i:
+i^i = 0.208+0i
+Should equal 0.20...
+
+ln(i):
+ln(i) = 0+1.57i
+Should equal 1.57...i
+
+sin(i pi):
+sin(i pi) = 0+11.5i
+Should equal 11.54...i
+
