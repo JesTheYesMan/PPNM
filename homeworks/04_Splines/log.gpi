@@ -1,0 +1,19 @@
+\
+                set terminal svg background "white" ;\
+                set out "Out.Cubic_interp.svg" ;\
+                set xlabel "x";\
+                set ylabel "y";\
+	set size 1,1;\
+	set key outside;\
+	set term svg size 600, 1200 ;\
+                set multiplot layout 3,1 columns ;\
+                set title "Cubic spline";\
+                plot "outcub2.txt" with p pt 7 ps 0.5 title "Data"\
+	,"" smooth csplines t "gnuplot spline"\
+                ,"outcub1.txt" using 1:2 with l title "Homemade spline";\
+                set title "Cubic spline derivative";\
+                plot "outcub1.txt" using 1:3 with l notitle;\
+	set title "Cubic spline integral";\
+	plot "outcub1.txt" using 1:4 with l notitle;\
+                unset multiplot;\
+                

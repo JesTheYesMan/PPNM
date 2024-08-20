@@ -1,0 +1,20 @@
+\
+                set terminal svg background "white" ;\
+                set out "Out.svg" ;\
+                set xlabel "x";\
+                set ylabel "g";\
+	set key outside;\
+	g(x) = sin(4*x-1)*exp(-x*x);\
+	set term svg size 1000, 1200 ;\
+	set multiplot layout 3,1 columns;\
+                set title "Neural Network for interpolation";\
+                set grid;\
+                plot[-1.1:1.1] g(x) with l lt 0 t "g(x)"\
+	,"dataTable.txt" with p pt 6 ps 0.5 t "Training data"\
+	,"outdata.txt" using 1:2 with l t "ANN 4 nodes" linecolor rgb "#4627E2";\
+	set title "derivative:";\
+	plot[-1.1:1.1]"outdata.txt" using 1:3 with l t "ANN 4 nodes" linecolor rgb "#4627E2";\
+	set title "integral from x=-1";\
+	plot[-1.1:1.1]"outdata.txt" using 1:4 with l t "ANN 4 nodes" linecolor rgb "#4627E2";\
+	unset multiplot;\
+                

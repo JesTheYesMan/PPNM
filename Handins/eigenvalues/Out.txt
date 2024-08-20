@@ -1,8 +1,0 @@
-Testing A=V*D*V^T : True
-
-Testing D=V^T*A*V : True
-
-Testing V^T*V=1 : True
-
-Testing V*V^T : True
-

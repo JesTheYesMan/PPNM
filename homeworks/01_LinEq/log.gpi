@@ -1,0 +1,12 @@
+\
+	set terminal svg background "white" ;\
+	set out "Out.times.svg" ;\
+	set xlabel "Matrix size N";\
+	set ylabel "Decomposition time";\
+	set title "Running time as function of size of matrices";\
+	f(x)=b+(x/a)**c;\
+	b=1; a=80; c=3;\
+	fit f(x) "outtimes.txt" via a,b;\
+	plot "outtimes.txt" with lp \
+	,f(x) title sprintf("fit: (n/%.f)^{%.2f}+%.3f",a,c,b) \
+	

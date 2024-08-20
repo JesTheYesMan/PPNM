@@ -1,0 +1,34 @@
+Rosenbrocks function: f(x,y) = (1-x)^2 + 100*(y-x^2)^2
+Minima: vmin = (1,1) f(vmin) = 0
+
+Starting point= (3,3)
+Numerical minima: vmin = (0.999999623492193,0.999999232657182), f(vmin) = 1.62285411445931E-13
+steps = 22, no. of evaluations = 224
+Starting point= (-3,4)
+Numerical minima: vmin = (0.999950338415792,0.999900519099476), f(vmin) = 2.46883929816911E-09
+steps = 29, no. of evaluations = 298
+Starting point= (-3,-4)
+Numerical minima: vmin = (0.999981009018266,0.999962007062231), f(vmin) = 3.6067023535583E-10
+steps = 41, no. of evaluations = 578
+Starting point= (3,-3)
+Numerical minima: vmin = (1.0000001586657,1.00000030184739), f(vmin) = 4.91503421958251E-14
+steps = 21, no. of evaluations = 213
+
+Himmelblau's function: f(x,y) = (x^2+y-11)^2 + (x+y^2-7)^2
+Minima: vmin = (3,2), f(vmin) = 0
+Minima: vmin = (-2.805,3.313), f(vmin) = 0
+Minima: vmin = (-3.779,-3.283), f(vmin) = 0
+Minima: vmin = (3.584,-1.848), f(vmin) = 0
+
+Starting point= (3,3)
+Numerical minima: vmin = (2.99999997578112,2.00000000364897), f(vmin) = 2.01613765208125E-14
+steps = 6, no. of evaluations = 59
+Starting point= (-3,4)
+Numerical minima: vmin = (-2.80511810699762,3.13131256780876), f(vmin) = 1.10534141570872E-13
+steps = 5, no. of evaluations = 49
+Starting point= (-3,-4)
+Numerical minima: vmin = (-3.77931028548676,-3.28318602476591), f(vmin) = 7.90161527372338E-14
+steps = 6, no. of evaluations = 59
+Starting point= (3,-3)
+Numerical minima: vmin = (3.58442831434013,-1.84812652394844), f(vmin) = 3.49800513149958E-14
+steps = 6, no. of evaluations = 59

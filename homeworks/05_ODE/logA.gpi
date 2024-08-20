@@ -1,0 +1,10 @@
+\
+	set terminal svg background "white" ;\
+	set out "OutA.svg" ;\
+	set xlabel "t";\
+	set grid;\
+	set size 1,1;\
+	set title "Solution to Harmonic oscillator and damped pendulum";\
+	plot "data_A_Oscilator.txt" using 1:2 with l t "theta(t)"\
+	, "data_A_Oscilator.txt" using 1:3 with l t "omega(t)"\
+	

@@ -1,0 +1,5 @@
+Area of circle, N = 40000 exact: 3.14159265358979, MC: 3.1393395180996, Estimated error: 0.00715055187435308
+Volume of half ball, N = 40000 exact: 2.0943951023932, MC: 2.08870024562921, Estimated error: 0.00594643071182219
+Volume of 4d half ball, N = 40000 exact: 2.46740110027234, MC: 2.43646436825554, Estimated error: 0.0124471477761405
+
+Hard integral, N = 1000000. MC: NaN, est. err. NaN, Exact: 1.39320392968568

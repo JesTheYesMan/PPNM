@@ -1,0 +1,16 @@
+\
+	set terminal svg background "white" ;\
+	set out "Out.fit.svg";\
+	set xlabel "t (days)" ;\
+	set ylabel "Decays" ;\
+	set grid;\
+	set title "exponential fit of radioactive decay of 224Ra";\
+	f(x) = a*exp(-b*x) ;\
+	fp(x) = a*exp(da)*exp(-(b-db)*x) ;\
+	fm(x) = a*exp(-da)*exp(-(b+db)*x) ;\
+	a = 142.403540630783; b = 0.171; da = 0.0354019292641024; db = 0.0071566223420022;\
+	plot "data.txt" with errorbars title "data"\
+	,f(x) title sprintf("fit: A(t)= %.f*e^{-%.2f t}",a,b)\
+	,fp(x) with lines title sprintf("fit with uncertainty upper bound ")\
+	,fm(x) with lines title sprintf("fit with uncertainty lower bound")\
+	

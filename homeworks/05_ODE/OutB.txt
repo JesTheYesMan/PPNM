@@ -1,0 +1,4 @@
+Test of ODE solver with no path-recording:
+ul = 1, ul' = 0
+ul = 0.996428611671055, ul' = -0.500216774373796
+ul = 0.591172750280158, ul' = -0.278930234462615

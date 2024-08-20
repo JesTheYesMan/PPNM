@@ -1,0 +1,11 @@
+\
+                set terminal svg background "white" ;\
+                set out "OutBWF.svg" ;\
+                set xlabel "r";\
+                set ylabel "Psi";\
+                set xrange [0:8] ;\
+                set title "n = 0 s-Wavefunction";\
+                f1(x) = x*exp(-x);\
+	plot "dataBWF.txt" using 1:2 with lines lt rgb "blue" title "Numerical Wavefunction" \
+	,f1(x) with lines lt rgb "red"  title "Analytic Wavefunction"\
+                

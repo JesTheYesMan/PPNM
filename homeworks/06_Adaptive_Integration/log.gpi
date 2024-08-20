@@ -1,0 +1,14 @@
+\
+	set terminal svg background "white" ;\
+	set out "OutA.Erf.svg" ;\
+	set key right bottom ;\
+	set xlabel "x";\
+	set ylabel "erf(x)";\
+	set title "Error function";\
+	set grid ;\
+	plot [-3:3]\
+		"dataA.txt" using 1:2 with lines t "Plots exercise approx" \
+		,"dataA.txt" using 1:3 with lines t "Numerical integration" \
+		,"dataAERF.txt" using 1:2 with points pointtype 6 notitle\
+		,"dataAERF.txt" using (-($1)):(-($2)) with points pointtype 6 notitle ;\
+

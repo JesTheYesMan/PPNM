@@ -1,0 +1,7 @@
+Optimal parameters (popt):      4.96      0.171 
+Covariance matrix (pcov):
+   0.00125   0.000197 
+  0.000197   5.12e-05 
+Uncertainties: 0.0354019292641024 0.0071566223420022
+starting value: a = 142.403540630783
+half life: tau = 4.06242368851649 ± 0.170393518471826 days, the table value is 3.6313(14) days

@@ -1,0 +1,14 @@
+Functions numerically integrated:
+			1/(1+x^2)		exp(-x):		x^2e^-x:		e^(-x^2):  
+
+limits:			-inf, inf		0,inf			0,inf			-inf,inf 
+
+Values found:		3.14169153632244	1.00054304003965	2.00036340120706	1.77269010023488	
+
+Expected values:	3.14159265358979	1			2			1.77245385090552
+
+Errors:     		0.00109992399462432	0.00100933256410189	0.000610474360762845	0.000707607634647627
+
+Evaluations:		40			20			68			72
+
+Python evaluations:	90			135			165			270

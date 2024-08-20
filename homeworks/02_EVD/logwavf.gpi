@@ -1,0 +1,17 @@
+\
+                set terminal svg background "white" ;\
+                set out "Out.HydrogenWavef.svg" ;\
+                set xlabel "r";\
+                set ylabel "Psi";\
+                set xrange [0:20] ;\
+                set title "Wavefunctions";\
+                f1(x) = 2*x*exp(-x);\
+	f2(x) = x*(1-x/2)*exp(-x/2)/sqrt(2) ;\
+	f3(x) = 2*x*(1-2*x/3 + 2*x*x/27)*exp(-x/3)/sqrt(27) ;\
+	plot "out.HydrogenWavef.txt" using 1:2 with p pt 3 ps 0.3 title "n = 1" \
+	,"out.HydrogenWavef.txt" using 1:3 with p pt 3 ps 0.3 title "n = 2" \
+	,"out.HydrogenWavef.txt" using 1:4 with p pt 3 ps 0.3 title "n = 3" \
+	,f1(x) with lines lt rgb "red"  title "u1(r)"\
+                ,f2(x) with lines lt rgb "brown" title "u2(r)"\
+                ,f3(x) with lines lt rgb "grey0" title "u3(r)"\
+                

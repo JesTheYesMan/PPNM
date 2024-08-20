@@ -1,0 +1,13 @@
+Comparison test with analytical values: Success
+c1 spline:         0          0          0          0 
+b1 spline:         0          0          0          0 
+c1 manual:         0          0          0          0 
+b1 manual:         0          0          0          0 
+c2 spline:         0          0          0          0 
+b2 spline:         1          1          1          1 
+c2 manual:         0          0          0          0 
+b2 manual:         1          1          1          1 
+c3 spline:         1          1          1          1 
+b3 spline:         2          4          6          8 
+c3 manual:         1          1          1          1 
+b3 manual:         2          4          6          8 

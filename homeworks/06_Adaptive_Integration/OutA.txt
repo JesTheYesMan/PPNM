@@ -1,0 +1,14 @@
+Numerical integration succesful
+Functions numerically integrated from 0 to 1:
+			sqrt(x):			1/sqrt(x):			4sqrt(1-x**2):			ln(x)/sqrt(x):  
+
+Values found:		0.666689290406816		1.99996150007805		3.14161878669555		-3.99997150974347
+
+Values given:		2/3				2				pi				-4
+
+Errors:     		0.000364267610388309		0.000412012551873554		0.000784025184364594		0.000408049836369902
+
+Evaluations:		44				8580				60				8688
+Python evaluations:	231				231				231				315
+
+The numerical method had the best approximation 22 times contra the plots function having the better approximation 9 times

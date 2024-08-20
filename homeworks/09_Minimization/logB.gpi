@@ -1,0 +1,10 @@
+\
+                set terminal svg background "white" ;\
+                set out "Out_B_plot.svg" ;\
+                set xlabel "E [GeV]";\
+                set ylabel "{/symbol s} (background subtracted)";\
+	set title "Resonance fit";\
+	set grid;\
+                plot "higgs_data.txt" with errorbars t "Data"\
+	, "Out_data_B.txt" with l t "Breit-Wigner fit"\
+                

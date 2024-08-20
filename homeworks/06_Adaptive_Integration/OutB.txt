@@ -1,0 +1,12 @@
+Functions numerically integrated:
+			1/sqrt(x):			ln(x)/sqrt(x):  
+
+Values found:		1.99999950243225		-3.99993242597408	
+
+Expected values:	2				-4
+
+Errors:     		0.000210180957228597		0.000726112187093009		
+
+Old evaluations:	8580				8688	
+New Evaluations:	32				172	
+Python evaluations:	231				315
