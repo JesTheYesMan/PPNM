@@ -97,7 +97,7 @@ mainC.exe: mainC.cs genlib.dll ode.dll
 
 
 genlib.dll: ../lib/matrix/vector.cs ../lib/genlist/genlist.cs \
-	../lib/Spline/spline.cs ../lib/matrix/matrix.cs \
+	../lib/spline/spline.cs ../lib/matrix/matrix.cs \
 	../lib/LinEq/QRGS.cs ../lib/LinEq/linsol.cs
 	$(MKLIB)
 

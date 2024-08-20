@@ -9,8 +9,8 @@
 | 5  | ODE           | 6 | 3 | 1 | 10  |
 | 6  | Integration   | 6 | 3 | 1 | 10  |
 | 7  | Monte Carlo   | 6 | 3 | 1 | 10  |
-| 8  | Roots         | 6 | 3 | 1 | 10  |
+| 8  | Roots         | 6 | 0 | 0 | 6  |
 | 9  | Minimisation  | 6 | 3 | 0 | 9  |
 | 10 | Neural Network| 6 | 3 | 0 | 9  |
-| |||||              total points: 97 |
+| |||||              total points: 93 |
 

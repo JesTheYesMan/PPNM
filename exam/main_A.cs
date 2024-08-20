@@ -26,34 +26,39 @@ public static void Main(){
         }
         
         
-        B = C.transpose() * C + 1e-10 * matrix.id(matrix_size);
+        B = C.transpose() * C;// + 1e-8 * matrix.id(matrix_size);
+        // Print matrix A
+        WriteLine("The matrices A and B are randomly generated: ");
+        A.print("\nA = ");
+        B.print("\nB = ");
+        WriteLine("Solving generalised eigenvalue problem");
+        (vector eigenvalues, matrix V )= generalised_eigenvalues_solver(A, B);
         
-        generalised_eigenvalues_solver(A, B);
+        eigenvalues.print("\nEigenvalues = ");  
+	V.print("\nV = ");
 	}
 	
 	
 public static (vector eigenvalues, matrix V) generalised_eigenvalues_solver(matrix A, matrix B) {
 
        	int n=A.size1;
-        WriteLine("Solving generalised eigenvalue problem");
-        // Print matrix A
-        A.print("\nA = ");
-        B.print("\nB = ");
+
+        
         
         
         // Finding Q and S via diagonalisation
         var (S, Q) = Diagonalize(B);
         
-        Q.print("\nQ = ");
-        S.print("\nS = ");
+//        Q.print("\nQ = ");
+//        S.print("\nS = ");
         
         
         // Finding S^(-1/2)
     matrix S_inv = InverseDiagonal(S);
-    	S_inv.print("\nS_inv = ");
+//    	S_inv.print("\nS_inv = ");
     	
     matrix S_inv_sqrt = matrix_sqrt(S_inv);
-        S_inv_sqrt.print("\nS_inv_sqrt = ");
+//        S_inv_sqrt.print("\nS_inv_sqrt = ");
 
 	//Finding A_tilde
     matrix QTAQ = Q.transpose() * A * Q; 
@@ -65,17 +70,18 @@ public static (vector eigenvalues, matrix V) generalised_eigenvalues_solver(matr
             }
         }
     //matrix A_tilde = S_inv_sqrt * QTAQ * S_inv_sqrt;
-    	A_tilde.print("\nA_tilde = ");
+//    	A_tilde.print("\nA_tilde = ");
     
     // Solving the standard eigenvalue problem to find X and the eigenvalues
     var (eigenvalues, X) = jacobi.cyclic(A_tilde);
     
-    eigenvalues.print("\nEigenvalues = ");
+//    eigenvalues.print("\nEigenvalues = ");
+    
     
     // Finding V 
     matrix V = Q * S_inv_sqrt * X;
     
-    V.print("\nV = ");
+//    V.print("\nV = ");
     
     return(eigenvalues, V);
 
@@ -84,8 +90,17 @@ public static (vector eigenvalues, matrix V) generalised_eigenvalues_solver(matr
 public static (matrix S, matrix Q) Diagonalize(matrix B)
 {
     (vector eigenvalues, matrix Q) = jacobi.cyclic(B);
-    matrix S= matrix.diag(eigenvalues);
-    return(S,Q);
+    matrix S = matrix.diag(eigenvalues);
+    double threshold = 1e-8 * eigenvalues.max(); // Use a relative threshold
+
+    for (int i = 0; i < S.size1; i++)
+    {
+        if (S[i, i] < threshold)
+        {
+            S[i, i] = threshold;  // Set small values to a relative threshold
+        }
+    }
+    return (S, Q);
 }
 //Helper method to make S^(1/2)
 public static matrix matrix_sqrt(matrix S)

@@ -85,7 +85,7 @@ namespace min{
 		public int f_eval;
 		public bool status;
 
-		public qnewton(Func<vector,double> func, vector start, double acc = 0.001, int max_steps = 9999){
+		public qnewton(Func<vector,double> func, vector start, double acc = 1e-3, int max_steps = 9999){
 			F=func; n = start.size; steps = 0; f_eval = 0;
 			matrix B = matrix.id(n);
 			vector gradf = new vector(n), Dx = new vector(n); 

@@ -1,0 +1,7 @@
+Initial alpha guess       1.5        2.5        3.5 
+Optimal Alphas: 
+      1.83       3.09       4.35 
+Optimisation Ground State Energy: -0.210550752245064
+Ground State Energy: 0.216708594386718
+Ground State Vector: 
+      4.81      -23.8       24.6 
